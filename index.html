@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Profile card component</title>
 
@@ -12,33 +14,118 @@
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    body {
+      font-family: 'Kumbh Sans', sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      text-align: center;
+    
+    }
+    .profileCardTop {
+        background-image: url("C:\\Users\\silve\\Documents\\Projects\\profile-card-component-main\\images\\bg-pattern-card.svg");
+        height: 150px;
+        width: 350px;
+      position: static;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+
+
+    }
+    .profileCardMiddle {
+      border-bottom: 2px solid grey;
+      width: 100%;
+      
+      
+
+    }
+    .info {
+      color: hsl(0, 0%, 59%);
+      text-align: center;
+    }
+    .profileCard {
+      border: 2px solid gray;
+      border-radius: 15px;
+      width: 350px;
+      position: absolute;
+      margin: 175px 550px;
+
+    }
+    img {
+      border-radius: 50%;
+      margin-top: 90px;
+    }
+
+    .positionRelative {
+      position: relative;
+    }
+
+    div.positionRelative {
+      top:-40px;
+      left: 26%;
+    }
+    .floatLeft {
+      float: left;
+      padding-left: 25px;
+      width: 100px;
+    }
+    .floatMiddle {
+      float: left;
+      width: 100px;
+    }
+    .floatRight {
+      float: right;
+      padding-right: 25px;
+      width: 100px;
+    }
+    
+   
   </style>
 </head>
 <body>
-  <img src="C:\Users\silve\Documents\Projects\profile-card-component-main\images\image-victor.jpg">
-  <div>
- <h3> Victor Crest
-  26
-  London</h3>
-</div>
+  <div class="profileBackground">
+    <div class="profileCard">
 
- <div>
-  <h3>80K</h3>
-  Followers
-</div>
+      <div class="profileCardTop">
+        <img src="C:\Users\silve\Documents\Projects\profile-card-component-main\images\image-victor.jpg">
+      </div>
+     
+      
+      <div class="headerContainer">
+        <h3 class=""> Victor Crest</h3>    
+        <div class="positionRelative info">
+         <p>26</p>
+        </div> 
+      </div>
+      
+      <div class="info">
+        <p>London</p>
+      </div>
 
-<div>
-  <h3>803K</h3>
-  Likes
-</div>
+      <div class="profileCardMiddle">
+          
+      </div>
 
-<div>
-  <h3>1.4K</h3>
-  Photos
-</div>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Alexis Shy</a>.
+    
+      <div class="profileCardBottom">
+        <div class= "floatLeft">
+          <h3>80K</h3>
+          <div class= "info">Followers</div>
+        </div>
+
+        <div class="floatMiddle">
+          <h3>803K</h3>
+          <div class="info">Likes</div>
+        </div>
+
+        <div class="floatRight">
+          <h3>1.4K</h3>
+          <div class="info">Photos</div>
+        </div>
+      </div>
+
+  
+    </div>
   </div>
 </body>
 </html>
