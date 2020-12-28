@@ -6,7 +6,8 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Profile card component</title>
 
@@ -19,6 +20,7 @@
       font-size: 18px;
       font-weight: 700;
       text-align: center;
+      background-image: url("C:\Users\silve\Documents\Projects\profile-card-component-main\images\bg-pattern-top.svg");
     
     }
     .profileCardTop {
@@ -29,11 +31,12 @@
       display: block;
       margin-left: auto;
       margin-right: auto;
+      z-index: ;
 
 
     }
     .profileCardMiddle {
-      border-bottom: 2px solid grey;
+      border-bottom: 1px solid gray;
       width: 100%;
       
       
@@ -42,9 +45,17 @@
     .info {
       color: hsl(0, 0%, 59%);
       text-align: center;
+      font-weight:  400;
+      
+    }
+    .profileCardBottom .info {
+      font-size: 14px;
+      letter-spacing: 3px;
+      padding-bottom: 10px;
+
     }
     .profileCard {
-      border: 2px solid gray;
+      border: 1px solid gray;
       border-radius: 15px;
       width: 350px;
       position: absolute;
@@ -78,12 +89,18 @@
       padding-right: 25px;
       width: 100px;
     }
+    h3 {
+      color: hsl(229, 23%, 23%);
+      padding-top:20px ;
+    }
     
    
   </style>
 </head>
 <body>
+  
   <div class="profileBackground">
+    <img src= >
     <div class="profileCard">
 
       <div class="profileCardTop">
