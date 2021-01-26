@@ -20,18 +20,29 @@
       font-size: 18px;
       font-weight: 700;
       text-align: center;
-      background-image: url("C:\Users\silve\Documents\Projects\profile-card-component-main\images\bg-pattern-top.svg");
-    
+      background-image: url("C:\\Users\\silve\\Documents\\Projects\\profile-card-component-main\\images\\bg-pattern-top.svg"), url("C:\\Users\\silve\\Documents\\Projects\\profile-card-component-main\\images\\bg-pattern-bottom.svg"); 
+      background-color: hsl(185, 75%, 39%);
+      background-repeat: no-repeat, no-repeat;
+      background-position: left -200px bottom 380px, right -200px top 380px;
+      min-height: 100%;
+
+
     }
+
+    
+    
     .profileCardTop {
-        background-image: url("C:\\Users\\silve\\Documents\\Projects\\profile-card-component-main\\images\\bg-pattern-card.svg");
+      background-image: url("C:\\Users\\silve\\Documents\\Projects\\profile-card-component-main\\images\\bg-pattern-card.svg");
         height: 150px;
         width: 350px;
       position: static;
       display: block;
       margin-left: auto;
       margin-right: auto;
-      z-index: ;
+      z-index: -1 ;
+      
+
+
 
 
     }
@@ -46,25 +57,29 @@
       color: hsl(0, 0%, 59%);
       text-align: center;
       font-weight:  400;
+
       
     }
     .profileCardBottom .info {
       font-size: 14px;
       letter-spacing: 3px;
-      padding-bottom: 10px;
+      padding-bottom: 40px;
 
     }
     .profileCard {
-      border: 1px solid gray;
+      
       border-radius: 15px;
       width: 350px;
       position: absolute;
       margin: 175px 550px;
+      overflow: hidden;
+      background-color: white;
 
     }
     img {
       border-radius: 50%;
       margin-top: 90px;
+      /*position: absolute;*/
     }
 
     .positionRelative {
@@ -72,7 +87,7 @@
     }
 
     div.positionRelative {
-      top:-40px;
+      top:-20px;
       left: 26%;
     }
     .floatLeft {
@@ -91,25 +106,37 @@
     }
     h3 {
       color: hsl(229, 23%, 23%);
-      padding-top:20px ;
+      padding-top: 20px ;
+
     }
+    html {
+      height: 100%;
+    }
+
+    .name {
+      padding-top: -20px;
+    }
+    
+    
     
    
   </style>
 </head>
 <body>
+
   
   <div class="profileBackground">
-    <img src= >
+    
     <div class="profileCard">
 
       <div class="profileCardTop">
+
         <img src="C:\Users\silve\Documents\Projects\profile-card-component-main\images\image-victor.jpg">
       </div>
      
       
       <div class="headerContainer">
-        <h3 class=""> Victor Crest</h3>    
+        <h3 class="name"> Victor Crest</h3>    
         <div class="positionRelative info">
          <p>26</p>
         </div> 
