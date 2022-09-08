@@ -1,0 +1,9 @@
+
+
+body {
+    background-image: url("./images/bg-pattern-top.svg"), url("./images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: left -200px bottom 380px, right -200px top 380px;
+    min-height: 100%;
+    
+}
