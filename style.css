@@ -28,6 +28,7 @@ img {
     margin: 0 auto;
     margin-bottom: -3rem;
     
+    
 }
 
 .profile-info {
@@ -46,6 +47,7 @@ img {
 
 .name-age {
     display: inline-flex;
+    padding-top: -20px;
     
 }
 
@@ -67,6 +69,7 @@ li, p {
 .stats-info {
     letter-spacing: 0.075em;
     margin: 0;
+    padding-bottom: 40px;
 }
 
 main {
