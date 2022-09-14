@@ -1,0 +1,77 @@
+
+
+body {
+    max-width: 100%;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 700;
+    background-image: url("./images/bg-pattern-top.svg"), url("./images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: left -12.5rem bottom 23.75rem, right -12.5rem top 23.75rem; 
+    background-color: hsl(185, 75%, 39%);
+    min-height: 100%;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+
+
+img {
+    display: block;
+    
+}
+.profile-img {
+    border-radius: 50%;
+    border: 0.4375rem solid white;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: -3rem;
+    
+    
+}
+
+.profile-info {
+    border-radius: 0.9375rem;
+    max-width: 21.875rem;
+    margin: 0 auto;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 0 1.1875rem 2.375px rgba(0, 0, 0, 0.30), 0 0.9375rem 0.75rem rgba(0, 0, 0, 0.22);
+    
+}
+
+.bio-section {
+    
+}
+
+.name-age {
+    display: inline-flex;
+    padding-top: -20px;
+    
+}
+
+hr {
+    margin-top: 2rem;
+    
+}
+.stats-section {
+    display: flex;
+    background-color: white;
+}
+li, p {
+    color: hsl(227, 10%, 46%);
+    font-weight: 400;
+    list-style: none;
+    
+}
+
+.stats-info {
+    letter-spacing: 0.075em;
+    margin: 0;
+    padding-bottom: 40px;
+}
+
+main {
+    padding: 1.5em;
+}

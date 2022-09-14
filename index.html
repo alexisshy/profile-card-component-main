@@ -6,175 +6,41 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-
+  <link href="style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Profile card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-    body {
-      font-family: 'Kumbh Sans', sans-serif;
-      font-size: 18px;
-      font-weight: 700;
-      text-align: center;
-      background-image: url("./images/bg-pattern-top.svg"), url("./images/bg-pattern-bottom.svg"); 
-      background-color: hsl(185, 75%, 39%);
-      background-repeat: no-repeat, no-repeat;
-      background-position: left -200px bottom 380px, right -200px top 380px;
-      min-height: 100%;
-
-
-    }
-
-    
-    
-    .profileCardTop {
-      background-image: url("./images/bg-pattern-card.svg");
-        height: 150px;
-        width: 350px;
-      position: static;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      z-index: -1 ;
-      
-
-
-
-
-    }
-    .profileCardMiddle {
-      border-bottom: 1px solid gray;
-      width: 100%;
-      
-      
-
-    }
-    .info {
-      color: hsl(0, 0%, 59%);
-      text-align: center;
-      font-weight:  400;
-
-      
-    }
-    .profileCardBottom .info {
-      font-size: 14px;
-      letter-spacing: 3px;
-      padding-bottom: 40px;
-
-    }
-    .profileCard {
-      
-      border-radius: 15px;
-      width: 350px;
-      position: absolute;
-      margin: 175px 550px;
-      overflow: hidden;
-      background-color: white;
-
-    }
-    img {
-      border-radius: 50%;
-      margin-top: 90px;
-      /*position: absolute;*/
-    }
-
-    .positionRelative {
-      position: relative;
-    }
-
-    div.positionRelative {
-      top:-20px;
-      left: 24%;
-    }
-    .floatLeft {
-      float: left;
-      padding-left: 25px;
-      width: 100px;
-    }
-    .floatMiddle {
-      float: left;
-      width: 100px;
-    }
-    .floatRight {
-      float: right;
-      padding-right: 25px;
-      width: 100px;
-    }
-    h3 {
-      color: hsl(229, 23%, 23%);
-      padding-top: 20px ;
-
-    }
-    html {
-      height: 100%;
-    }
-
-    .name {
-      padding-top: -20px;
-      position: relative;
-      top: 20px;
-    }
-    
-    .city {
-      top: -25px;
-      position: relative;
-    }
-    
-   
-  </style>
-</head>
-<body>
-
-  
-  <div class="profileBackground">
-    
-    <div class="profileCard">
-
-      <div class="profileCardTop">
-
-        <img src="./images/image-victor.jpg">
-      </div>
-     
-      
-      <div class="headerContainer">
-        <h3 class="name"> Victor Crest</h3>    
-        <div class="positionRelative info">
-         <p>26</p>
-        </div> 
-      </div>
-      
-      <div class="info city">
-        <p>London</p>
-      </div>
-
-      <div class="profileCardMiddle">
-          
-      </div>
-
-    
-      <div class="profileCardBottom">
-        <div class= "floatLeft">
-          <h3>80K</h3>
-          <div class= "info">Followers</div>
-        </div>
-
-        <div class="floatMiddle">
-          <h3>803K</h3>
-          <div class="info">Likes</div>
-        </div>
-
-        <div class="floatRight">
-          <h3>1.4K</h3>
-          <div class="info">Photos</div>
-        </div>
-      </div>
-
-  
-    </div>
-  </div>
-</body>
+  </head>
+    <body>
+        <main>
+            
+            <div class="profile-info">
+                <section class="bio-section">
+                    <img src="./images/bg-pattern-card.svg" alt="patterned image">
+                    <img class="profile-img" src="./images/image-victor.jpg" alt="photo of victor">
+                    <div class="name-age">
+                        <h1>Victor Crest</h1>
+                        <p>26</p>
+                    </div>
+                    <p>London</p>
+                </section>    
+                <hr>
+                <section class="stats-section">
+                    <ul class="stats-info">
+                        <strong>80K</strong>
+                        <li>Followers</li>
+                    </ul>
+                    
+                    <ul class="stats-info">
+                        <strong>803K</strong>
+                        <li>Likes</li>
+                    </ul>
+                    <ul class="stats-info">
+                        <strong>1.4K</strong>
+                        <li>Photos</li>
+                    </ul>
+                </section>
+            </div>    
+        </main>
+    </body>
 </html>
