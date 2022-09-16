@@ -1,7 +1,8 @@
 
 
 body {
-    max-width: 100%;
+    min-height: 100vh;
+    min-width: 350px;
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 1.125rem;
     font-weight: 700;
@@ -9,10 +10,9 @@ body {
     background-repeat: no-repeat, no-repeat;
     background-position: left -12.5rem bottom 23.75rem, right -12.5rem top 23.75rem; 
     background-color: hsl(185, 75%, 39%);
-    min-height: 100%;
-    text-align: center;
-    justify-content: center;
-    display: flex;
+    display: grid;
+    place-items: center;
+  
 }
 
 
@@ -26,8 +26,9 @@ img {
     border: 0.4375rem solid white;
     display: block;
     margin: 0 auto;
-    margin-bottom: -3rem;
-    
+    margin-bottom: ;
+    margin-top: -50px;
+    width: 30%;
     
 }
 
@@ -45,9 +46,9 @@ img {
     
 }
 
-.name-age {
-    display: inline-flex;
-    padding-top: -20px;
+.card-info {
+    margin-top: ;
+    text-align: center;
     
 }
 
@@ -55,23 +56,35 @@ hr {
     margin-top: 2rem;
     
 }
-.stats-section {
+.stats-section ul {
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     background-color: white;
 }
-li, p {
+span, p {
     color: hsl(227, 10%, 46%);
     font-weight: 400;
-    list-style: none;
+    
     
 }
 
-.stats-info {
+li {
+    justify-content: center;
+}
+.stats-info  {
+
+    display: grid;
     letter-spacing: 0.075em;
     margin: 0;
-    padding-bottom: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    list-style: none;
 }
 
+.stats-info span {
+    
+}
 main {
-    padding: 1.5em;
+    padding: 1.5rem;
 }
